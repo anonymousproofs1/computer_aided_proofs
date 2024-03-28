@@ -8,11 +8,13 @@ FontSize -> 36],StyleBox["=",FontSize -> 36],StyleBox[" ",FontSize -> 36]}]],Sty
 ExpressionUUID -> "aa5d905c-37ff-421d-9f06-ab6291091934"],Cell[
 CellGroupData[{Cell[
 BoxData[
-{RowBox[{RowBox[{"(*"," ",RowBox[{"Define"," ","mu"}]," ","*)"}],"\n",RowBox[{RowBox[
-{"mu"," ","="," ",RowBox[{RowBox[{"(",RowBox[{RowBox[{RowBox[{"-","8"}]," ","pf"," ",RowBox[
-{"p","^","3"}]," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}]," ","+"," ","bl"}],")"}]," ","bl"," ",RowBox[
-{"(",RowBox[{RowBox[{"-","1"}]," ","+"," ","br"}],")"}]," ","br"}]," ","+"," ",RowBox[
-{"2"," ",RowBox[{"p","^","4"}]," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}]," ","+"," ","bl"}],")"}]," ","bl"," ",RowBox[
+{RowBox[{"(*"," ",RowBox[{RowBox[{"See"," ","Mathematica"," ","codes"," ","at"," ",RowBox[
+{"https",":"}]}],"//",RowBox[{RowBox[{RowBox[{"bit",".","ly"}],"/","3"}],"vY8Bw1"}]}]," ","*)"}],"\n",RowBox[
+{RowBox[{"(*"," ",RowBox[{"Define"," ","mu"}]," ","*)"}],"\n",RowBox[{RowBox[{"mu"," ","="," ",RowBox[
+{RowBox[{"(",RowBox[{RowBox[{RowBox[{"-","8"}]," ","pf"," ",RowBox[{"p","^","3"}]," ",RowBox[
+{"(",RowBox[{RowBox[{"-","1"}]," ","+"," ","bl"}],")"}]," ","bl"," ",RowBox[{"(",RowBox[
+{RowBox[{"-","1"}]," ","+"," ","br"}],")"}]," ","br"}]," ","+"," ",RowBox[{"2"," ",RowBox[
+{"p","^","4"}]," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}]," ","+"," ","bl"}],")"}]," ","bl"," ",RowBox[
 {"(",RowBox[{RowBox[{"-","1"}]," ","+"," ","br"}],")"}]," ","br"}]," ","-"," ",RowBox[
 {"2"," ","p"," ",RowBox[{"(",RowBox[{RowBox[{"-","2"}]," ","+"," ","br"," ","+"," ",RowBox[
 {"3"," ","pf"," ","br"}]," ","-"," ",RowBox[{"pf"," ",RowBox[{"br","^","2"}]}]," ","+"," ",RowBox[
@@ -54,24 +56,334 @@ BoxData[
 {"(",RowBox[{RowBox[{"-","1"}]," ","+"," ","br"}],")"}]," ","br"}]," ","+"," ",RowBox[
 {"bl"," ",RowBox[{"(",RowBox[{"3"," ","-"," ",RowBox[{"2"," ","br"}]," ","+"," ",RowBox[
 {"6"," ",RowBox[{"pf","^","2"}]," ","br"}]," ","-"," ",RowBox[{"6"," ",RowBox[{"pf","^","2"}]," ",RowBox[
-{"br","^","2"}]}]}],")"}]}]}],")"}]}]}],")"}]}]}],";"}]}],"\n",RowBox[{RowBox[{"(*"," ",RowBox[
-{RowBox[{"Take"," ","second"}],"-",RowBox[{"order"," ","derivative"," ",RowBox[{"w",".","r",".","t","."," ","b_r"}]}]}]," ","*)"}],"\n",RowBox[
-{RowBox[{"secondDerivative"," ","="," ",RowBox[{"D","[",RowBox[{"mu",","," ",RowBox[
-{"{",RowBox[{"br",","," ","2"}],"}"}]}],"]"}]}],";"}]}],"\n",RowBox[{RowBox[{"(*"," ",RowBox[
-{RowBox[{"Take"," ","b_l"}]," ","="," ",RowBox[{"1","/","2"}]}]," ","*)"}],"\n",RowBox[
-{RowBox[{"SOD"," ","=",RowBox[{"Simplify","[",RowBox[{"secondDerivative"," ","/."," ",RowBox[
-{"{"," ",RowBox[{"bl"," ","\[Rule]"," ",RowBox[{"1","/","2"}]}],"}"}]}],"]"}]}],";"}]}],"\n",RowBox[
-{RowBox[{"(*"," ",RowBox[{"Specify"," ","range"," ","of"," ","parameters"}]," ","*)"}],"\n",RowBox[
+{"br","^","2"}]}]}],")"}]}]}],")"}]}]}],")"}]}]}],"\n",RowBox[{"(*"," ",RowBox[{RowBox[
+{"Take"," ","second"}],"-",RowBox[{"order"," ","derivative"," ",RowBox[{"w",".","r",".","t","."," ","b_r"}]}]}]," ","*)"}],"\n",RowBox[
+{"secondDerivative"," ","="," ",RowBox[{"D","[",RowBox[{"mu",","," ",RowBox[{"{",RowBox[
+{"br",","," ","2"}],"}"}]}],"]"}]}]}]}],"\n",RowBox[{RowBox[{"(*"," ",RowBox[{RowBox[
+{"Take"," ","b_l"}]," ","="," ",RowBox[{"1","/","2"}]}]," ","*)"}],"\n",RowBox[{"SOD"," ","=",RowBox[
+{"Simplify","[",RowBox[{"secondDerivative"," ","/."," ",RowBox[{"{"," ",RowBox[{"bl"," ","\[Rule]"," ",RowBox[
+{"1","/","2"}]}],"}"}]}],"]"}]}]}],"\n",RowBox[{"(*"," ",RowBox[{"Specify"," ","range"," ","of"," ","parameters"}]," ","*)"}],"\n",RowBox[
 {RowBox[{"conditions"," ","="," ",RowBox[{RowBox[{"0"," ","<","br"," ","<","1"}]," ","&&"," ",RowBox[
-{"0"," ","\[LessEqual]"," ","p"," ","<"," ","pf"," ","\[LessEqual]"," ",RowBox[{"1","/","2"}]}]}]}],";"}]}],"\n",RowBox[
-{RowBox[{"(*"," ",RowBox[{RowBox[{RowBox[{"Verify"," ","if"," ","it"," ","is"," ","possible"," ","to"," ","have"," ","SOD"}]," ",">="," ","0"}],";"," ",RowBox[
+{"0"," ","\[LessEqual]"," ","p"," ","<"," ","pf"," ","\[LessEqual]"," ",RowBox[{"1","/","2"}]}]}]}],"\n",RowBox[
+{"(*"," ",RowBox[{RowBox[{RowBox[{"Verify"," ","if"," ","it"," ","is"," ","possible"," ","to"," ","have"," ","SOD"}]," ",">="," ","0"}],";"," ",RowBox[
 {RowBox[{"returns"," ","false"," ","if"," ","SOD"}]," ","<"," ",RowBox[{"0"," ","for"," ","all"," ","parameters"," ","within"," ","the"," ","range"}]}]}]," ","*)"}],"\n",RowBox[
 {"Reduce","[",RowBox[{RowBox[{RowBox[{"SOD"," ","\[GreaterEqual]"," ","0"}]," ","&&"," ","conditions"}],","," ",RowBox[
 {"{",RowBox[{"br",",","bl",",","pf",",","p"}],"}"}]}],"]"}],"  "}]}],"Input",CellLabel -> "In[1]:= ",
 ExpressionUUID -> "c73f884f-a9d8-42ac-b048-f45e9e926b63"],Cell[
-BoxData["False",StandardForm],
-"Output",CellLabel -> "Out[5]= ",ExpressionUUID -> "9bf9a401-7988-4796-8fea-562d2ecd2dbd"]},
-Open],ExpressionUUID -> "6bdc516e-167f-455f-bd9d-1c74a8ab73d0"]},Open],ExpressionUUID -> "ab4144bc-687b-413b-b121-ddcc7a9cd857"],Cell[
+BoxData[FractionBox[
+RowBox[{RowBox[{"2"," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","bl"}],")"}]," ","bl"," ",RowBox[
+{"(",RowBox[{RowBox[{"-","1"}],"+","br"}],")"}]," ","br"," ",SuperscriptBox["p","4"]}],"-",RowBox[
+{"8"," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","bl"}],")"}]," ","bl"," ",RowBox[
+{"(",RowBox[{RowBox[{"-","1"}],"+","br"}],")"}]," ","br"," ",SuperscriptBox["p","3"]," ","pf"}],"-",RowBox[
+{"2"," ","p"," ",RowBox[{"(",RowBox[{RowBox[{"-","2"}],"+","br","+",RowBox[{"3"," ","br"," ","pf"}],"-",RowBox[
+{SuperscriptBox["br","2"]," ","pf"}],"+",RowBox[{SuperscriptBox["bl","2"]," ","pf"," ",RowBox[
+{"(",RowBox[{RowBox[{"-","1"}],"+",RowBox[{"4"," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","br"}],")"}]," ","br"," ",SuperscriptBox[
+"pf","2"]}]}],")"}]}],"+",RowBox[{"bl"," ",RowBox[{"(",RowBox[{"1","+",RowBox[{RowBox[
+{"(",RowBox[{"3","-",RowBox[{"4"," ","br"}]}],")"}]," ","pf"}],"-",RowBox[{"4"," ",RowBox[
+{"(",RowBox[{RowBox[{"-","1"}],"+","br"}],")"}]," ","br"," ",SuperscriptBox["pf",
+"3"]}]}],")"}]}]}],")"}]}],"+",RowBox[{"pf"," ",RowBox[{"(",RowBox[{RowBox[{RowBox[
+{"-","br"}]," ",RowBox[{"(",RowBox[{RowBox[{"-","2"}],"+","pf","+",RowBox[{"br"," ","pf"}]}],")"}]}],"+",RowBox[
+{SuperscriptBox["bl","2"]," ","pf"," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+",RowBox[
+{"2"," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","br"}],")"}]," ","br"," ",SuperscriptBox[
+"pf","2"]}]}],")"}]}],"-",RowBox[{"bl"," ",RowBox[{"(",RowBox[{RowBox[{"-","2"}],"+","pf","+",RowBox[
+{"4"," ","br"," ","pf"}],"+",RowBox[{"2"," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","br"}],")"}]," ","br"," ",SuperscriptBox[
+"pf","3"]}]}],")"}]}]}],")"}]}],"+",RowBox[{SuperscriptBox["p","2"]," ",RowBox[{"(",RowBox[
+{RowBox[{"-","8"}],"+",RowBox[{"7"," ","br"}],"-",SuperscriptBox["br","2"],"+",RowBox[
+{SuperscriptBox["bl","2"]," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+",RowBox[{"12"," ",RowBox[
+{"(",RowBox[{RowBox[{"-","1"}],"+","br"}],")"}]," ","br"," ",SuperscriptBox["pf",
+"2"]}]}],")"}]}],"+",RowBox[{"bl"," ",RowBox[{"(",RowBox[{"7","-",RowBox[{"12"," ",SuperscriptBox[
+"br","2"]," ",SuperscriptBox["pf","2"]}],"+",RowBox[{"4"," ","br"," ",RowBox[{"(",RowBox[
+{RowBox[{"-","1"}],"+",RowBox[{"3"," ",SuperscriptBox["pf","2"]}]}],")"}]}]}],")"}]}]}],")"}]}]}],
+RowBox[{"1","+",RowBox[{RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","bl"}],")"}]," ","bl"," ",RowBox[
+{"(",RowBox[{RowBox[{"-","1"}],"+","br"}],")"}]," ","br"," ",SuperscriptBox["p","4"]}],"-",RowBox[
+{"4"," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","bl"}],")"}]," ","bl"," ",RowBox[
+{"(",RowBox[{RowBox[{"-","1"}],"+","br"}],")"}]," ","br"," ",SuperscriptBox["p","3"]," ","pf"}],"-",RowBox[
+{RowBox[{"(",RowBox[{"bl","+","br","+",RowBox[{"2"," ","bl"," ","br"}]}],")"}]," ",SuperscriptBox[
+"pf","2"]}],"+",RowBox[{RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","bl"}],")"}]," ","bl"," ",RowBox[
+{"(",RowBox[{RowBox[{"-","1"}],"+","br"}],")"}]," ","br"," ",SuperscriptBox["pf",
+"4"]}],"-",RowBox[{"2"," ","p"," ","pf"," ",RowBox[{"(",RowBox[{"bl","+","br","+",RowBox[
+{"2"," ",SuperscriptBox["bl","2"]," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","br"}],")"}]," ","br"," ",SuperscriptBox[
+"pf","2"]}],"-",RowBox[{"2"," ","bl"," ",SuperscriptBox["br","2"]," ",SuperscriptBox[
+"pf","2"]}],"+",RowBox[{"2"," ","bl"," ","br"," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+",SuperscriptBox[
+"pf","2"]}],")"}]}]}],")"}]}],"+",RowBox[{SuperscriptBox["p","2"]," ",RowBox[{"(",RowBox[
+{RowBox[{"-","4"}],"+",RowBox[{"3"," ","br"}],"+",RowBox[{"6"," ",SuperscriptBox[
+"bl","2"]," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","br"}],")"}]," ","br"," ",SuperscriptBox[
+"pf","2"]}],"+",RowBox[{"bl"," ",RowBox[{"(",RowBox[{"3","-",RowBox[{"2"," ","br"}],"+",RowBox[
+{"6"," ","br"," ",SuperscriptBox["pf","2"]}],"-",RowBox[{"6"," ",SuperscriptBox["br",
+"2"]," ",SuperscriptBox["pf","2"]}]}],")"}]}]}],")"}]}]}]],StandardForm],"Output",
+CellLabel -> "Out[1]= ",ExpressionUUID -> "f2064dad-8c30-49c0-905c-b530349688a4"],Cell[
+BoxData[
+RowBox[{FractionBox[RowBox[{RowBox[{"4"," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","bl"}],")"}]," ","bl"," ",SuperscriptBox[
+"p","4"]}],"-",RowBox[{"16"," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","bl"}],")"}]," ","bl"," ",SuperscriptBox[
+"p","3"]," ","pf"}],"+",RowBox[{SuperscriptBox["p","2"]," ",RowBox[{"(",RowBox[{RowBox[
+{"-","2"}],"-",RowBox[{"24"," ","bl"," ",SuperscriptBox["pf","2"]}],"+",RowBox[{"24"," ",SuperscriptBox[
+"bl","2"]," ",SuperscriptBox["pf","2"]}]}],")"}]}],"+",RowBox[{"pf"," ",RowBox[{"(",RowBox[
+{RowBox[{RowBox[{"-","2"}]," ","pf"}],"-",RowBox[{"4"," ","bl"," ",SuperscriptBox[
+"pf","3"]}],"+",RowBox[{"4"," ",SuperscriptBox["bl","2"]," ",SuperscriptBox["pf",
+"3"]}]}],")"}]}],"-",RowBox[{"2"," ","p"," ",RowBox[{"(",RowBox[{RowBox[{RowBox[{"-","2"}]," ","pf"}],"-",RowBox[
+{"8"," ","bl"," ",SuperscriptBox["pf","3"]}],"+",RowBox[{"8"," ",SuperscriptBox["bl",
+"2"]," ",SuperscriptBox["pf","3"]}]}],")"}]}]}],RowBox[{"1","+",RowBox[{RowBox[{"(",RowBox[
+{RowBox[{"-","1"}],"+","bl"}],")"}]," ","bl"," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","br"}],")"}]," ","br"," ",SuperscriptBox[
+"p","4"]}],"-",RowBox[{"4"," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","bl"}],")"}]," ","bl"," ",RowBox[
+{"(",RowBox[{RowBox[{"-","1"}],"+","br"}],")"}]," ","br"," ",SuperscriptBox["p","3"]," ","pf"}],"-",RowBox[
+{RowBox[{"(",RowBox[{"bl","+","br","+",RowBox[{"2"," ","bl"," ","br"}]}],")"}]," ",SuperscriptBox[
+"pf","2"]}],"+",RowBox[{RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","bl"}],")"}]," ","bl"," ",RowBox[
+{"(",RowBox[{RowBox[{"-","1"}],"+","br"}],")"}]," ","br"," ",SuperscriptBox["pf",
+"4"]}],"-",RowBox[{"2"," ","p"," ","pf"," ",RowBox[{"(",RowBox[{"bl","+","br","+",RowBox[
+{"2"," ",SuperscriptBox["bl","2"]," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","br"}],")"}]," ","br"," ",SuperscriptBox[
+"pf","2"]}],"-",RowBox[{"2"," ","bl"," ",SuperscriptBox["br","2"]," ",SuperscriptBox[
+"pf","2"]}],"+",RowBox[{"2"," ","bl"," ","br"," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+",SuperscriptBox[
+"pf","2"]}],")"}]}]}],")"}]}],"+",RowBox[{SuperscriptBox["p","2"]," ",RowBox[{"(",RowBox[
+{RowBox[{"-","4"}],"+",RowBox[{"3"," ","br"}],"+",RowBox[{"6"," ",SuperscriptBox[
+"bl","2"]," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","br"}],")"}]," ","br"," ",SuperscriptBox[
+"pf","2"]}],"+",RowBox[{"bl"," ",RowBox[{"(",RowBox[{"3","-",RowBox[{"2"," ","br"}],"+",RowBox[
+{"6"," ","br"," ",SuperscriptBox["pf","2"]}],"-",RowBox[{"6"," ",SuperscriptBox["br",
+"2"]," ",SuperscriptBox["pf","2"]}]}],")"}]}]}],")"}]}]}]],"-",FractionBox[RowBox[
+{"2"," ",RowBox[{"(",RowBox[{RowBox[{RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","bl"}],")"}]," ","bl"," ",RowBox[
+{"(",RowBox[{RowBox[{"-","1"}],"+","br"}],")"}]," ",SuperscriptBox["p","4"]}],"+",RowBox[
+{RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","bl"}],")"}]," ","bl"," ","br"," ",SuperscriptBox[
+"p","4"]}],"-",RowBox[{"4"," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","bl"}],")"}]," ","bl"," ",RowBox[
+{"(",RowBox[{RowBox[{"-","1"}],"+","br"}],")"}]," ",SuperscriptBox["p","3"]," ","pf"}],"-",RowBox[
+{"4"," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","bl"}],")"}]," ","bl"," ","br"," ",SuperscriptBox[
+"p","3"]," ","pf"}],"-",RowBox[{RowBox[{"(",RowBox[{"1","+",RowBox[{"2"," ","bl"}]}],")"}]," ",SuperscriptBox[
+"pf","2"]}],"+",RowBox[{RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","bl"}],")"}]," ","bl"," ",RowBox[
+{"(",RowBox[{RowBox[{"-","1"}],"+","br"}],")"}]," ",SuperscriptBox["pf","4"]}],"+",RowBox[
+{RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","bl"}],")"}]," ","bl"," ","br"," ",SuperscriptBox[
+"pf","4"]}],"-",RowBox[{"2"," ","p"," ","pf"," ",RowBox[{"(",RowBox[{"1","+",RowBox[
+{"2"," ",SuperscriptBox["bl","2"]," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","br"}],")"}]," ",SuperscriptBox[
+"pf","2"]}],"-",RowBox[{"4"," ","bl"," ","br"," ",SuperscriptBox["pf","2"]}],"+",RowBox[
+{"2"," ",SuperscriptBox["bl","2"]," ","br"," ",SuperscriptBox["pf","2"]}],"+",RowBox[
+{"2"," ","bl"," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+",SuperscriptBox["pf","2"]}],")"}]}]}],")"}]}],"+",RowBox[
+{SuperscriptBox["p","2"]," ",RowBox[{"(",RowBox[{"3","+",RowBox[{"6"," ",SuperscriptBox[
+"bl","2"]," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","br"}],")"}]," ",SuperscriptBox[
+"pf","2"]}],"+",RowBox[{"6"," ",SuperscriptBox["bl","2"]," ","br"," ",SuperscriptBox[
+"pf","2"]}],"+",RowBox[{"bl"," ",RowBox[{"(",RowBox[{RowBox[{"-","2"}],"+",RowBox[
+{"6"," ",SuperscriptBox["pf","2"]}],"-",RowBox[{"12"," ","br"," ",SuperscriptBox[
+"pf","2"]}]}],")"}]}]}],")"}]}]}],")"}]," ",RowBox[{"(",RowBox[{RowBox[{"2"," ",RowBox[
+{"(",RowBox[{RowBox[{"-","1"}],"+","bl"}],")"}]," ","bl"," ",RowBox[{"(",RowBox[{RowBox[
+{"-","1"}],"+","br"}],")"}]," ",SuperscriptBox["p","4"]}],"+",RowBox[{"2"," ",RowBox[
+{"(",RowBox[{RowBox[{"-","1"}],"+","bl"}],")"}]," ","bl"," ","br"," ",SuperscriptBox[
+"p","4"]}],"-",RowBox[{"8"," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","bl"}],")"}]," ","bl"," ",RowBox[
+{"(",RowBox[{RowBox[{"-","1"}],"+","br"}],")"}]," ",SuperscriptBox["p","3"]," ","pf"}],"-",RowBox[
+{"8"," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","bl"}],")"}]," ","bl"," ","br"," ",SuperscriptBox[
+"p","3"]," ","pf"}],"-",RowBox[{"2"," ","p"," ",RowBox[{"(",RowBox[{"1","+",RowBox[
+{"3"," ","pf"}],"-",RowBox[{"2"," ","br"," ","pf"}],"+",RowBox[{SuperscriptBox["bl",
+"2"]," ","pf"," ",RowBox[{"(",RowBox[{RowBox[{"4"," ",RowBox[{"(",RowBox[{RowBox[
+{"-","1"}],"+","br"}],")"}]," ",SuperscriptBox["pf","2"]}],"+",RowBox[{"4"," ","br"," ",SuperscriptBox[
+"pf","2"]}]}],")"}]}],"+",RowBox[{"bl"," ",RowBox[{"(",RowBox[{RowBox[{RowBox[{"-","4"}]," ","pf"}],"-",RowBox[
+{"4"," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","br"}],")"}]," ",SuperscriptBox[
+"pf","3"]}],"-",RowBox[{"4"," ","br"," ",SuperscriptBox["pf","3"]}]}],")"}]}]}],")"}]}],"+",RowBox[
+{"pf"," ",RowBox[{"(",RowBox[{"2","-","pf","-",RowBox[{"2"," ","br"," ","pf"}],"+",RowBox[
+{SuperscriptBox["bl","2"]," ","pf"," ",RowBox[{"(",RowBox[{RowBox[{"2"," ",RowBox[
+{"(",RowBox[{RowBox[{"-","1"}],"+","br"}],")"}]," ",SuperscriptBox["pf","2"]}],"+",RowBox[
+{"2"," ","br"," ",SuperscriptBox["pf","2"]}]}],")"}]}],"-",RowBox[{"bl"," ",RowBox[
+{"(",RowBox[{RowBox[{"4"," ","pf"}],"+",RowBox[{"2"," ",RowBox[{"(",RowBox[{RowBox[
+{"-","1"}],"+","br"}],")"}]," ",SuperscriptBox["pf","3"]}],"+",RowBox[{"2"," ","br"," ",SuperscriptBox[
+"pf","3"]}]}],")"}]}]}],")"}]}],"+",RowBox[{SuperscriptBox["p","2"]," ",RowBox[{"(",RowBox[
+{"7","-",RowBox[{"2"," ","br"}],"+",RowBox[{SuperscriptBox["bl","2"]," ",RowBox[{"(",RowBox[
+{RowBox[{"12"," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","br"}],")"}]," ",SuperscriptBox[
+"pf","2"]}],"+",RowBox[{"12"," ","br"," ",SuperscriptBox["pf","2"]}]}],")"}]}],"+",RowBox[
+{"bl"," ",RowBox[{"(",RowBox[{RowBox[{RowBox[{"-","24"}]," ","br"," ",SuperscriptBox[
+"pf","2"]}],"+",RowBox[{"4"," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+",RowBox[
+{"3"," ",SuperscriptBox["pf","2"]}]}],")"}]}]}],")"}]}]}],")"}]}]}],")"}]}],SuperscriptBox[
+RowBox[{"(",RowBox[{"1","+",RowBox[{RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","bl"}],")"}]," ","bl"," ",RowBox[
+{"(",RowBox[{RowBox[{"-","1"}],"+","br"}],")"}]," ","br"," ",SuperscriptBox["p","4"]}],"-",RowBox[
+{"4"," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","bl"}],")"}]," ","bl"," ",RowBox[
+{"(",RowBox[{RowBox[{"-","1"}],"+","br"}],")"}]," ","br"," ",SuperscriptBox["p","3"]," ","pf"}],"-",RowBox[
+{RowBox[{"(",RowBox[{"bl","+","br","+",RowBox[{"2"," ","bl"," ","br"}]}],")"}]," ",SuperscriptBox[
+"pf","2"]}],"+",RowBox[{RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","bl"}],")"}]," ","bl"," ",RowBox[
+{"(",RowBox[{RowBox[{"-","1"}],"+","br"}],")"}]," ","br"," ",SuperscriptBox["pf",
+"4"]}],"-",RowBox[{"2"," ","p"," ","pf"," ",RowBox[{"(",RowBox[{"bl","+","br","+",RowBox[
+{"2"," ",SuperscriptBox["bl","2"]," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","br"}],")"}]," ","br"," ",SuperscriptBox[
+"pf","2"]}],"-",RowBox[{"2"," ","bl"," ",SuperscriptBox["br","2"]," ",SuperscriptBox[
+"pf","2"]}],"+",RowBox[{"2"," ","bl"," ","br"," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+",SuperscriptBox[
+"pf","2"]}],")"}]}]}],")"}]}],"+",RowBox[{SuperscriptBox["p","2"]," ",RowBox[{"(",RowBox[
+{RowBox[{"-","4"}],"+",RowBox[{"3"," ","br"}],"+",RowBox[{"6"," ",SuperscriptBox[
+"bl","2"]," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","br"}],")"}]," ","br"," ",SuperscriptBox[
+"pf","2"]}],"+",RowBox[{"bl"," ",RowBox[{"(",RowBox[{"3","-",RowBox[{"2"," ","br"}],"+",RowBox[
+{"6"," ","br"," ",SuperscriptBox["pf","2"]}],"-",RowBox[{"6"," ",SuperscriptBox["br",
+"2"]," ",SuperscriptBox["pf","2"]}]}],")"}]}]}],")"}]}]}],")"}],"2"]],"+",RowBox[
+{RowBox[{"(",RowBox[{RowBox[{"2"," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","bl"}],")"}]," ","bl"," ",RowBox[
+{"(",RowBox[{RowBox[{"-","1"}],"+","br"}],")"}]," ","br"," ",SuperscriptBox["p","4"]}],"-",RowBox[
+{"8"," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","bl"}],")"}]," ","bl"," ",RowBox[
+{"(",RowBox[{RowBox[{"-","1"}],"+","br"}],")"}]," ","br"," ",SuperscriptBox["p","3"]," ","pf"}],"-",RowBox[
+{"2"," ","p"," ",RowBox[{"(",RowBox[{RowBox[{"-","2"}],"+","br","+",RowBox[{"3"," ","br"," ","pf"}],"-",RowBox[
+{SuperscriptBox["br","2"]," ","pf"}],"+",RowBox[{SuperscriptBox["bl","2"]," ","pf"," ",RowBox[
+{"(",RowBox[{RowBox[{"-","1"}],"+",RowBox[{"4"," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","br"}],")"}]," ","br"," ",SuperscriptBox[
+"pf","2"]}]}],")"}]}],"+",RowBox[{"bl"," ",RowBox[{"(",RowBox[{"1","+",RowBox[{RowBox[
+{"(",RowBox[{"3","-",RowBox[{"4"," ","br"}]}],")"}]," ","pf"}],"-",RowBox[{"4"," ",RowBox[
+{"(",RowBox[{RowBox[{"-","1"}],"+","br"}],")"}]," ","br"," ",SuperscriptBox["pf",
+"3"]}]}],")"}]}]}],")"}]}],"+",RowBox[{"pf"," ",RowBox[{"(",RowBox[{RowBox[{RowBox[
+{"-","br"}]," ",RowBox[{"(",RowBox[{RowBox[{"-","2"}],"+","pf","+",RowBox[{"br"," ","pf"}]}],")"}]}],"+",RowBox[
+{SuperscriptBox["bl","2"]," ","pf"," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+",RowBox[
+{"2"," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","br"}],")"}]," ","br"," ",SuperscriptBox[
+"pf","2"]}]}],")"}]}],"-",RowBox[{"bl"," ",RowBox[{"(",RowBox[{RowBox[{"-","2"}],"+","pf","+",RowBox[
+{"4"," ","br"," ","pf"}],"+",RowBox[{"2"," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","br"}],")"}]," ","br"," ",SuperscriptBox[
+"pf","3"]}]}],")"}]}]}],")"}]}],"+",RowBox[{SuperscriptBox["p","2"]," ",RowBox[{"(",RowBox[
+{RowBox[{"-","8"}],"+",RowBox[{"7"," ","br"}],"-",SuperscriptBox["br","2"],"+",RowBox[
+{SuperscriptBox["bl","2"]," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+",RowBox[{"12"," ",RowBox[
+{"(",RowBox[{RowBox[{"-","1"}],"+","br"}],")"}]," ","br"," ",SuperscriptBox["pf",
+"2"]}]}],")"}]}],"+",RowBox[{"bl"," ",RowBox[{"(",RowBox[{"7","-",RowBox[{"12"," ",SuperscriptBox[
+"br","2"]," ",SuperscriptBox["pf","2"]}],"+",RowBox[{"4"," ","br"," ",RowBox[{"(",RowBox[
+{RowBox[{"-","1"}],"+",RowBox[{"3"," ",SuperscriptBox["pf","2"]}]}],")"}]}]}],")"}]}]}],")"}]}]}],")"}]," ",RowBox[
+{"(",RowBox[{FractionBox[RowBox[{"2"," ",SuperscriptBox[RowBox[{"(",RowBox[{RowBox[
+{RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","bl"}],")"}]," ","bl"," ",RowBox[{"(",RowBox[
+{RowBox[{"-","1"}],"+","br"}],")"}]," ",SuperscriptBox["p","4"]}],"+",RowBox[{RowBox[
+{"(",RowBox[{RowBox[{"-","1"}],"+","bl"}],")"}]," ","bl"," ","br"," ",SuperscriptBox[
+"p","4"]}],"-",RowBox[{"4"," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","bl"}],")"}]," ","bl"," ",RowBox[
+{"(",RowBox[{RowBox[{"-","1"}],"+","br"}],")"}]," ",SuperscriptBox["p","3"]," ","pf"}],"-",RowBox[
+{"4"," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","bl"}],")"}]," ","bl"," ","br"," ",SuperscriptBox[
+"p","3"]," ","pf"}],"-",RowBox[{RowBox[{"(",RowBox[{"1","+",RowBox[{"2"," ","bl"}]}],")"}]," ",SuperscriptBox[
+"pf","2"]}],"+",RowBox[{RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","bl"}],")"}]," ","bl"," ",RowBox[
+{"(",RowBox[{RowBox[{"-","1"}],"+","br"}],")"}]," ",SuperscriptBox["pf","4"]}],"+",RowBox[
+{RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","bl"}],")"}]," ","bl"," ","br"," ",SuperscriptBox[
+"pf","4"]}],"-",RowBox[{"2"," ","p"," ","pf"," ",RowBox[{"(",RowBox[{"1","+",RowBox[
+{"2"," ",SuperscriptBox["bl","2"]," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","br"}],")"}]," ",SuperscriptBox[
+"pf","2"]}],"-",RowBox[{"4"," ","bl"," ","br"," ",SuperscriptBox["pf","2"]}],"+",RowBox[
+{"2"," ",SuperscriptBox["bl","2"]," ","br"," ",SuperscriptBox["pf","2"]}],"+",RowBox[
+{"2"," ","bl"," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+",SuperscriptBox["pf","2"]}],")"}]}]}],")"}]}],"+",RowBox[
+{SuperscriptBox["p","2"]," ",RowBox[{"(",RowBox[{"3","+",RowBox[{"6"," ",SuperscriptBox[
+"bl","2"]," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","br"}],")"}]," ",SuperscriptBox[
+"pf","2"]}],"+",RowBox[{"6"," ",SuperscriptBox["bl","2"]," ","br"," ",SuperscriptBox[
+"pf","2"]}],"+",RowBox[{"bl"," ",RowBox[{"(",RowBox[{RowBox[{"-","2"}],"+",RowBox[
+{"6"," ",SuperscriptBox["pf","2"]}],"-",RowBox[{"12"," ","br"," ",SuperscriptBox[
+"pf","2"]}]}],")"}]}]}],")"}]}]}],")"}],"2"]}],SuperscriptBox[RowBox[{"(",RowBox[
+{"1","+",RowBox[{RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","bl"}],")"}]," ","bl"," ",RowBox[
+{"(",RowBox[{RowBox[{"-","1"}],"+","br"}],")"}]," ","br"," ",SuperscriptBox["p","4"]}],"-",RowBox[
+{"4"," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","bl"}],")"}]," ","bl"," ",RowBox[
+{"(",RowBox[{RowBox[{"-","1"}],"+","br"}],")"}]," ","br"," ",SuperscriptBox["p","3"]," ","pf"}],"-",RowBox[
+{RowBox[{"(",RowBox[{"bl","+","br","+",RowBox[{"2"," ","bl"," ","br"}]}],")"}]," ",SuperscriptBox[
+"pf","2"]}],"+",RowBox[{RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","bl"}],")"}]," ","bl"," ",RowBox[
+{"(",RowBox[{RowBox[{"-","1"}],"+","br"}],")"}]," ","br"," ",SuperscriptBox["pf",
+"4"]}],"-",RowBox[{"2"," ","p"," ","pf"," ",RowBox[{"(",RowBox[{"bl","+","br","+",RowBox[
+{"2"," ",SuperscriptBox["bl","2"]," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","br"}],")"}]," ","br"," ",SuperscriptBox[
+"pf","2"]}],"-",RowBox[{"2"," ","bl"," ",SuperscriptBox["br","2"]," ",SuperscriptBox[
+"pf","2"]}],"+",RowBox[{"2"," ","bl"," ","br"," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+",SuperscriptBox[
+"pf","2"]}],")"}]}]}],")"}]}],"+",RowBox[{SuperscriptBox["p","2"]," ",RowBox[{"(",RowBox[
+{RowBox[{"-","4"}],"+",RowBox[{"3"," ","br"}],"+",RowBox[{"6"," ",SuperscriptBox[
+"bl","2"]," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","br"}],")"}]," ","br"," ",SuperscriptBox[
+"pf","2"]}],"+",RowBox[{"bl"," ",RowBox[{"(",RowBox[{"3","-",RowBox[{"2"," ","br"}],"+",RowBox[
+{"6"," ","br"," ",SuperscriptBox["pf","2"]}],"-",RowBox[{"6"," ",SuperscriptBox["br",
+"2"]," ",SuperscriptBox["pf","2"]}]}],")"}]}]}],")"}]}]}],")"}],"3"]],"-",FractionBox[
+RowBox[{RowBox[{"2"," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","bl"}],")"}]," ","bl"," ",SuperscriptBox[
+"p","4"]}],"-",RowBox[{"8"," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","bl"}],")"}]," ","bl"," ",SuperscriptBox[
+"p","3"]," ","pf"}],"+",RowBox[{"2"," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","bl"}],")"}]," ","bl"," ",SuperscriptBox[
+"pf","4"]}],"-",RowBox[{"2"," ","p"," ","pf"," ",RowBox[{"(",RowBox[{RowBox[{RowBox[
+{"-","4"}]," ","bl"," ",SuperscriptBox["pf","2"]}],"+",RowBox[{"4"," ",SuperscriptBox[
+"bl","2"]," ",SuperscriptBox["pf","2"]}]}],")"}]}],"+",RowBox[{SuperscriptBox["p",
+"2"]," ",RowBox[{"(",RowBox[{RowBox[{RowBox[{"-","12"}]," ","bl"," ",SuperscriptBox[
+"pf","2"]}],"+",RowBox[{"12"," ",SuperscriptBox["bl","2"]," ",SuperscriptBox["pf",
+"2"]}]}],")"}]}]}],SuperscriptBox[RowBox[{"(",RowBox[{"1","+",RowBox[{RowBox[{"(",RowBox[
+{RowBox[{"-","1"}],"+","bl"}],")"}]," ","bl"," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","br"}],")"}]," ","br"," ",SuperscriptBox[
+"p","4"]}],"-",RowBox[{"4"," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","bl"}],")"}]," ","bl"," ",RowBox[
+{"(",RowBox[{RowBox[{"-","1"}],"+","br"}],")"}]," ","br"," ",SuperscriptBox["p","3"]," ","pf"}],"-",RowBox[
+{RowBox[{"(",RowBox[{"bl","+","br","+",RowBox[{"2"," ","bl"," ","br"}]}],")"}]," ",SuperscriptBox[
+"pf","2"]}],"+",RowBox[{RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","bl"}],")"}]," ","bl"," ",RowBox[
+{"(",RowBox[{RowBox[{"-","1"}],"+","br"}],")"}]," ","br"," ",SuperscriptBox["pf",
+"4"]}],"-",RowBox[{"2"," ","p"," ","pf"," ",RowBox[{"(",RowBox[{"bl","+","br","+",RowBox[
+{"2"," ",SuperscriptBox["bl","2"]," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","br"}],")"}]," ","br"," ",SuperscriptBox[
+"pf","2"]}],"-",RowBox[{"2"," ","bl"," ",SuperscriptBox["br","2"]," ",SuperscriptBox[
+"pf","2"]}],"+",RowBox[{"2"," ","bl"," ","br"," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+",SuperscriptBox[
+"pf","2"]}],")"}]}]}],")"}]}],"+",RowBox[{SuperscriptBox["p","2"]," ",RowBox[{"(",RowBox[
+{RowBox[{"-","4"}],"+",RowBox[{"3"," ","br"}],"+",RowBox[{"6"," ",SuperscriptBox[
+"bl","2"]," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","br"}],")"}]," ","br"," ",SuperscriptBox[
+"pf","2"]}],"+",RowBox[{"bl"," ",RowBox[{"(",RowBox[{"3","-",RowBox[{"2"," ","br"}],"+",RowBox[
+{"6"," ","br"," ",SuperscriptBox["pf","2"]}],"-",RowBox[{"6"," ",SuperscriptBox["br",
+"2"]," ",SuperscriptBox["pf","2"]}]}],")"}]}]}],")"}]}]}],")"}],"2"]]}],")"}]}]}],
+StandardForm],"Output",CellLabel -> "Out[2]= ",ExpressionUUID -> "664fbd6e-b160-4f37-b444-28c647d823dc"],Cell[
+BoxData[
+RowBox[{"-",FractionBox[RowBox[{"2"," ",SuperscriptBox[RowBox[{"(",RowBox[{"p","-","pf"}],")"}],
+"2"]," ",RowBox[{"(",RowBox[{RowBox[{"-","64"}],"+",RowBox[{RowBox[{"(",RowBox[{"1","-",RowBox[
+{"3"," ","br"}],"+",RowBox[{"3"," ",SuperscriptBox["br","2"]}]}],")"}]," ",SuperscriptBox[
+"p","8"]}],"+",RowBox[{"256"," ","pf"}],"-",RowBox[{"352"," ",SuperscriptBox["pf",
+"2"]}],"+",RowBox[{"16"," ",RowBox[{"(",RowBox[{"7","+",RowBox[{"6"," ","br"}]}],")"}]," ",SuperscriptBox[
+"pf","3"]}],"-",RowBox[{"4"," ",RowBox[{"(",RowBox[{RowBox[{"-","29"}],"+",RowBox[
+{"36"," ","br"}],"+",RowBox[{"12"," ",SuperscriptBox["br","2"]}]}],")"}]," ",SuperscriptBox[
+"pf","4"]}],"+",RowBox[{"8"," ",RowBox[{"(",RowBox[{RowBox[{"-","7"}],"+",RowBox[
+{"6"," ","br"}]}],")"}]," ",SuperscriptBox["pf","5"]}],"+",RowBox[{"2"," ",RowBox[
+{"(",RowBox[{RowBox[{"-","9"}],"+",RowBox[{"12"," ","br"}],"+",RowBox[{"16"," ",SuperscriptBox[
+"br","3"]}]}],")"}]," ",SuperscriptBox["pf","6"]}],"+",RowBox[{"4"," ",RowBox[{"(",RowBox[
+{"1","-",RowBox[{"3"," ","br"}],"+",RowBox[{"3"," ",SuperscriptBox["br","2"]}],"+",RowBox[
+{"2"," ",SuperscriptBox["br","3"]}]}],")"}]," ",SuperscriptBox["pf","7"]}],"+",RowBox[
+{RowBox[{"(",RowBox[{"1","-",RowBox[{"3"," ","br"}],"+",RowBox[{"3"," ",SuperscriptBox[
+"br","2"]}]}],")"}]," ",SuperscriptBox["pf","8"]}],"+",RowBox[{"2"," ",SuperscriptBox[
+"p","2"]," ",RowBox[{"(",RowBox[{RowBox[{"-","176"}],"+",RowBox[{"72"," ",RowBox[
+{"(",RowBox[{"5","+",RowBox[{"2"," ","br"}]}],")"}]," ","pf"}],"-",RowBox[{"36"," ",RowBox[
+{"(",RowBox[{"9","-",RowBox[{"4"," ","br"}],"+",RowBox[{"4"," ",SuperscriptBox["br",
+"2"]}]}],")"}]," ",SuperscriptBox["pf","2"]}],"-",RowBox[{"8"," ",RowBox[{"(",RowBox[
+{RowBox[{"-","25"}],"+",RowBox[{"42"," ","br"}]}],")"}]," ",SuperscriptBox["pf","3"]}],"+",RowBox[
+{RowBox[{"(",RowBox[{RowBox[{"-","91"}],"+",RowBox[{"204"," ","br"}],"-",RowBox[{"144"," ",SuperscriptBox[
+"br","2"]}],"+",RowBox[{"80"," ",SuperscriptBox["br","3"]}]}],")"}]," ",SuperscriptBox[
+"pf","4"]}],"+",RowBox[{"6"," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+",RowBox[
+{"3"," ","br"}],"-",RowBox[{"3"," ",SuperscriptBox["br","2"]}],"+",RowBox[{"14"," ",SuperscriptBox[
+"br","3"]}]}],")"}]," ",SuperscriptBox["pf","5"]}],"+",RowBox[{"14"," ",RowBox[{"(",RowBox[
+{"1","-",RowBox[{"3"," ","br"}],"+",RowBox[{"3"," ",SuperscriptBox["br","2"]}]}],")"}]," ",SuperscriptBox[
+"pf","6"]}]}],")"}]}],"-",RowBox[{"4"," ","p"," ",RowBox[{"(",RowBox[{RowBox[{"-","64"}],"+",RowBox[
+{"208"," ","pf"}],"+",RowBox[{"36"," ",RowBox[{"(",RowBox[{RowBox[{"-","7"}],"+",RowBox[
+{"2"," ","br"}]}],")"}]," ",SuperscriptBox["pf","2"]}],"-",RowBox[{"4"," ",RowBox[
+{"(",RowBox[{RowBox[{"-","25"}],"+",RowBox[{"12"," ","br"}],"+",RowBox[{"12"," ",SuperscriptBox[
+"br","2"]}]}],")"}]," ",SuperscriptBox["pf","3"]}],"+",RowBox[{RowBox[{"(",RowBox[
+{"26","-",RowBox[{"36"," ","br"}]}],")"}]," ",SuperscriptBox["pf","4"]}],"+",RowBox[
+{RowBox[{"(",RowBox[{RowBox[{"-","25"}],"+",RowBox[{"48"," ","br"}],"-",RowBox[{"24"," ",SuperscriptBox[
+"br","2"]}],"+",RowBox[{"32"," ",SuperscriptBox["br","3"]}]}],")"}]," ",SuperscriptBox[
+"pf","5"]}],"+",RowBox[{RowBox[{"(",RowBox[{"3","-",RowBox[{"9"," ","br"}],"+",RowBox[
+{"9"," ",SuperscriptBox["br","2"]}],"+",RowBox[{"14"," ",SuperscriptBox["br","3"]}]}],")"}]," ",SuperscriptBox[
+"pf","6"]}],"+",RowBox[{RowBox[{"(",RowBox[{"2","-",RowBox[{"6"," ","br"}],"+",RowBox[
+{"6"," ",SuperscriptBox["br","2"]}]}],")"}]," ",SuperscriptBox["pf","7"]}]}],")"}]}],"-",RowBox[
+{"4"," ",SuperscriptBox["p","7"]," ",RowBox[{"(",RowBox[{RowBox[{"-","3"}],"+",RowBox[
+{"2"," ",SuperscriptBox["br","3"]}],"+",RowBox[{"br"," ",RowBox[{"(",RowBox[{"9","-",RowBox[
+{"6"," ","pf"}]}],")"}]}],"+",RowBox[{"2"," ","pf"}],"+",RowBox[{SuperscriptBox["br",
+"2"]," ",RowBox[{"(",RowBox[{RowBox[{"-","9"}],"+",RowBox[{"6"," ","pf"}]}],")"}]}]}],")"}]}],"+",RowBox[
+{"2"," ",SuperscriptBox["p","6"]," ",RowBox[{"(",RowBox[{"19","-",RowBox[{"34"," ","pf"}],"+",RowBox[
+{"14"," ",SuperscriptBox["pf","2"]}],"+",RowBox[{"4"," ",SuperscriptBox["br","3"]," ",RowBox[
+{"(",RowBox[{RowBox[{"-","4"}],"+",RowBox[{"7"," ","pf"}]}],")"}]}],"+",RowBox[{"6"," ",SuperscriptBox[
+"br","2"]," ",RowBox[{"(",RowBox[{"8","-",RowBox[{"17"," ","pf"}],"+",RowBox[{"7"," ",SuperscriptBox[
+"pf","2"]}]}],")"}]}],"-",RowBox[{"6"," ","br"," ",RowBox[{"(",RowBox[{"10","-",RowBox[
+{"17"," ","pf"}],"+",RowBox[{"7"," ",SuperscriptBox["pf","2"]}]}],")"}]}]}],")"}]}],"-",RowBox[
+{"4"," ",SuperscriptBox["p","5"]," ",RowBox[{"(",RowBox[{"2","+",RowBox[{"31"," ","pf"}],"-",RowBox[
+{"39"," ",SuperscriptBox["pf","2"]}],"+",RowBox[{"14"," ",SuperscriptBox["pf","3"]}],"+",RowBox[
+{"2"," ",SuperscriptBox["br","3"]," ","pf"," ",RowBox[{"(",RowBox[{RowBox[{"-","16"}],"+",RowBox[
+{"21"," ","pf"}]}],")"}]}],"+",RowBox[{"3"," ",SuperscriptBox["br","2"]," ","pf"," ",RowBox[
+{"(",RowBox[{"24","-",RowBox[{"39"," ","pf"}],"+",RowBox[{"14"," ",SuperscriptBox[
+"pf","2"]}]}],")"}]}],"-",RowBox[{"3"," ","br"," ",RowBox[{"(",RowBox[{RowBox[{"-","4"}],"+",RowBox[
+{"32"," ","pf"}],"-",RowBox[{"39"," ",SuperscriptBox["pf","2"]}],"+",RowBox[{"14"," ",SuperscriptBox[
+"pf","3"]}]}],")"}]}]}],")"}]}],"+",RowBox[{"2"," ",SuperscriptBox["p","4"]," ",RowBox[
+{"(",RowBox[{RowBox[{"-","38"}],"+",RowBox[{"20"," ","pf"}],"+",RowBox[{"49"," ",SuperscriptBox[
+"pf","2"]}],"-",RowBox[{"90"," ",SuperscriptBox["pf","3"]}],"+",RowBox[{"35"," ",SuperscriptBox[
+"pf","4"]}],"+",RowBox[{"20"," ",SuperscriptBox["br","3"]," ",SuperscriptBox["pf",
+"2"]," ",RowBox[{"(",RowBox[{RowBox[{"-","4"}],"+",RowBox[{"7"," ","pf"}]}],")"}]}],"+",RowBox[
+{"3"," ",SuperscriptBox["br","2"]," ",RowBox[{"(",RowBox[{RowBox[{"-","8"}],"+",RowBox[
+{"32"," ",SuperscriptBox["pf","2"]}],"-",RowBox[{"90"," ",SuperscriptBox["pf","3"]}],"+",RowBox[
+{"35"," ",SuperscriptBox["pf","4"]}]}],")"}]}],"-",RowBox[{"3"," ","br"," ",RowBox[
+{"(",RowBox[{RowBox[{"-","40"}],"+",RowBox[{"24"," ","pf"}],"+",RowBox[{"52"," ",SuperscriptBox[
+"pf","2"]}],"-",RowBox[{"90"," ",SuperscriptBox["pf","3"]}],"+",RowBox[{"35"," ",SuperscriptBox[
+"pf","4"]}]}],")"}]}]}],")"}]}],"-",RowBox[{"4"," ",SuperscriptBox["p","3"]," ",RowBox[
+{"(",RowBox[{RowBox[{"-","52"}],"+",RowBox[{"4"," ","pf"}],"+",RowBox[{"68"," ",SuperscriptBox[
+"pf","2"]}],"-",RowBox[{"22"," ",SuperscriptBox["pf","3"]}],"-",RowBox[{"25"," ",SuperscriptBox[
+"pf","4"]}],"+",RowBox[{"70"," ",SuperscriptBox["br","3"]," ",SuperscriptBox["pf",
+"4"]}],"+",RowBox[{"14"," ",SuperscriptBox["pf","5"]}],"+",RowBox[{"3"," ","br"," ",RowBox[
+{"(",RowBox[{"8","+",RowBox[{"48"," ","pf"}],"-",RowBox[{"56"," ",SuperscriptBox[
+"pf","2"]}],"+",RowBox[{"16"," ",SuperscriptBox["pf","3"]}],"+",RowBox[{"25"," ",SuperscriptBox[
+"pf","4"]}],"-",RowBox[{"14"," ",SuperscriptBox["pf","5"]}]}],")"}]}],"+",RowBox[
+{SuperscriptBox["br","2"]," ",RowBox[{"(",RowBox[{RowBox[{RowBox[{"-","48"}]," ","pf"}],"-",RowBox[
+{"48"," ",SuperscriptBox["pf","3"]}],"-",RowBox[{"75"," ",SuperscriptBox["pf","4"]}],"+",RowBox[
+{"42"," ",SuperscriptBox["pf","5"]}]}],")"}]}]}],")"}]}]}],")"}]}],SuperscriptBox[
+RowBox[{"(",RowBox[{RowBox[{"-","4"}],"+",RowBox[{RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","br"}],")"}]," ","br"," ",SuperscriptBox[
+"p","4"]}],"-",RowBox[{"4"," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","br"}],")"}]," ","br"," ",SuperscriptBox[
+"p","3"]," ","pf"}],"+",RowBox[{RowBox[{"(",RowBox[{"2","+",RowBox[{"8"," ","br"}]}],")"}]," ",SuperscriptBox[
+"pf","2"]}],"+",RowBox[{RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","br"}],")"}]," ","br"," ",SuperscriptBox[
+"pf","4"]}],"+",RowBox[{"p"," ",RowBox[{"(",RowBox[{RowBox[{"4"," ","pf"}],"-",RowBox[
+{"4"," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","br"}],")"}]," ","br"," ",SuperscriptBox[
+"pf","3"]}]}],")"}]}],"+",RowBox[{"2"," ",SuperscriptBox["p","2"]," ",RowBox[{"(",RowBox[
+{"5","+",RowBox[{"3"," ",SuperscriptBox["br","2"]," ",SuperscriptBox["pf","2"]}],"-",RowBox[
+{"br"," ",RowBox[{"(",RowBox[{"4","+",RowBox[{"3"," ",SuperscriptBox["pf","2"]}]}],")"}]}]}],")"}]}]}],")"}],
+"3"]]}],StandardForm],"Output",CellLabel -> "Out[3]= ",ExpressionUUID -> "3d2b1b30-4421-47a6-891f-3f02cd4d76b7"],Cell[
+BoxData[
+RowBox[{RowBox[{"0","<","br","<","1"}],"&&",RowBox[{"0","\[LessEqual]","p","<","pf","\[LessEqual]",FractionBox[
+"1","2"]}]}],StandardForm],"Output",CellLabel -> "Out[4]= ",ExpressionUUID -> "e299683f-fed2-4865-b0f0-cfb8c1f00c83"],Cell[
+BoxData[
+"False",StandardForm],"Output",CellLabel -> "Out[5]= ",ExpressionUUID -> "76c17e44-06a2-4849-970f-685ab13b7028"]},
+Open],ExpressionUUID -> "d9ed66a9-bbea-42c1-b3c3-bdd0570931f8"]},Open],ExpressionUUID -> "ab4144bc-687b-413b-b121-ddcc7a9cd857"],Cell[
 CellGroupData[
 {Cell[
 TextData[{StyleBox["Theorem",FontSize -> 36],StyleBox[" ",FontSize -> 36],StyleBox[
@@ -82,20 +394,209 @@ ExpressionUUID -> "def3589f-9417-4dd5-a1de-89ccfda96384"],Cell[
 CellGroupData[{Cell[
 BoxData[
 {RowBox[{RowBox[{"(*"," ",RowBox[{RowBox[{"Take"," ","second"}],"-",RowBox[{"order"," ","derivative"," ",RowBox[
-{"w",".","r",".","t","."," ","b_r"}]}]}]," ","*)"}],"\n",RowBox[{RowBox[{"secondDerivative"," ","="," ",RowBox[
-{"D","[",RowBox[{"mu",","," ",RowBox[{"{",RowBox[{"br",","," ","2"}],"}"}]}],"]"}]}],";"}]}],"\n",RowBox[
+{"w",".","r",".","t","."," ","b_r"}]}]}]," ","*)"}],"\n",RowBox[{"secondDerivative"," ","="," ",RowBox[
+{"D","[",RowBox[{"mu",","," ",RowBox[{"{",RowBox[{"br",","," ","2"}],"}"}]}],"]"}]}]}],"\n",RowBox[
 {RowBox[{"(*"," ",RowBox[{RowBox[{"Take"," ","b_l"}]," ","="," ","0"}]," ","*)"}],"\n",RowBox[
-{RowBox[{"SOD"," ","=",RowBox[{"Simplify","[",RowBox[{"secondDerivative"," ","/."," ",RowBox[
-{"{"," ",RowBox[{"bl"," ","\[Rule]"," ","0"}],"}"}]}],"]"}]}],";"}]}],"\n",RowBox[
-{RowBox[{"(*"," ",RowBox[{"Specify"," ","range"," ","of"," ","parameters"}]," ","*)"}],"\n",RowBox[
-{RowBox[{"conditions"," ","="," ",RowBox[{RowBox[{"0"," ","<","br"," ","<","1"}]," ","&&"," ",RowBox[
-{"0"," ","\[LessEqual]"," ","p"," ","<"," ","pf"," ","\[LessEqual]"," ",RowBox[{"1","/","2"}]}]}]}],";"}]}],"\n",RowBox[
-{RowBox[{"(*"," ",RowBox[{RowBox[{RowBox[{"Verify"," ","if"," ","it"," ","is"," ","possible"," ","to"," ","have"," ","SOD"}]," ",">="," ","0"}],";"," ",RowBox[
+{"SOD"," ","=",RowBox[{"Simplify","[",RowBox[{"secondDerivative"," ","/."," ",RowBox[
+{"{"," ",RowBox[{"bl"," ","\[Rule]"," ","0"}],"}"}]}],"]"}]}]}],"\n",RowBox[{"(*"," ",RowBox[
+{"Specify"," ","range"," ","of"," ","parameters"}]," ","*)"}],"\n",RowBox[{RowBox[
+{"conditions"," ","="," ",RowBox[{RowBox[{"0"," ","<","br"," ","<","1"}]," ","&&"," ",RowBox[
+{"0"," ","\[LessEqual]"," ","p"," ","<"," ","pf"," ","\[LessEqual]"," ",RowBox[{"1","/","2"}]}]}]}],"\n",RowBox[
+{"(*"," ",RowBox[{RowBox[{RowBox[{"Verify"," ","if"," ","it"," ","is"," ","possible"," ","to"," ","have"," ","SOD"}]," ",">="," ","0"}],";"," ",RowBox[
 {RowBox[{"returns"," ","false"," ","if"," ","SOD"}]," ","<"," ",RowBox[{"0"," ","for"," ","all"," ","parameters"," ","within"," ","the"," ","range"}]}]}]," ","*)"}],"\n",RowBox[
 {"Reduce","[",RowBox[{RowBox[{RowBox[{"SOD"," ","\[GreaterEqual]"," ","0"}]," ","&&"," ","conditions"}],","," ",RowBox[
 {"{",RowBox[{"br",",","bl",",","pf",",","p"}],"}"}]}],"]"}],"  "}]}],"Input",CellLabel -> "In[6]:= ",
 ExpressionUUID -> "67e28759-ac18-4695-b52f-51a3df79f2b6"],Cell[
-BoxData["False",StandardForm],
-"Output",CellLabel -> "Out[9]= ",ExpressionUUID -> "01081d0a-4e8c-4f81-a276-f3008927028b"]},
-Open],ExpressionUUID -> "10182dde-5740-4020-b986-f624a7833f01"]},Open],ExpressionUUID -> "ca1e04d0-5dcc-4e2f-a4d1-c659787bc521"]},
-StyleDefinitions -> "Default.nb",FrontEndVersion -> "14. for Wolfram Cloud 1.67.1 (December 19, 2023)"]
+BoxData[RowBox[{FractionBox[
+RowBox[{RowBox[{"4"," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","bl"}],")"}]," ","bl"," ",SuperscriptBox[
+"p","4"]}],"-",RowBox[{"16"," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","bl"}],")"}]," ","bl"," ",SuperscriptBox[
+"p","3"]," ","pf"}],"+",RowBox[{SuperscriptBox["p","2"]," ",RowBox[{"(",RowBox[{RowBox[
+{"-","2"}],"-",RowBox[{"24"," ","bl"," ",SuperscriptBox["pf","2"]}],"+",RowBox[{"24"," ",SuperscriptBox[
+"bl","2"]," ",SuperscriptBox["pf","2"]}]}],")"}]}],"+",RowBox[{"pf"," ",RowBox[{"(",RowBox[
+{RowBox[{RowBox[{"-","2"}]," ","pf"}],"-",RowBox[{"4"," ","bl"," ",SuperscriptBox[
+"pf","3"]}],"+",RowBox[{"4"," ",SuperscriptBox["bl","2"]," ",SuperscriptBox["pf",
+"3"]}]}],")"}]}],"-",RowBox[{"2"," ","p"," ",RowBox[{"(",RowBox[{RowBox[{RowBox[{"-","2"}]," ","pf"}],"-",RowBox[
+{"8"," ","bl"," ",SuperscriptBox["pf","3"]}],"+",RowBox[{"8"," ",SuperscriptBox["bl",
+"2"]," ",SuperscriptBox["pf","3"]}]}],")"}]}]}],RowBox[{"1","+",RowBox[{RowBox[{"(",RowBox[
+{RowBox[{"-","1"}],"+","bl"}],")"}]," ","bl"," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","br"}],")"}]," ","br"," ",SuperscriptBox[
+"p","4"]}],"-",RowBox[{"4"," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","bl"}],")"}]," ","bl"," ",RowBox[
+{"(",RowBox[{RowBox[{"-","1"}],"+","br"}],")"}]," ","br"," ",SuperscriptBox["p","3"]," ","pf"}],"-",RowBox[
+{RowBox[{"(",RowBox[{"bl","+","br","+",RowBox[{"2"," ","bl"," ","br"}]}],")"}]," ",SuperscriptBox[
+"pf","2"]}],"+",RowBox[{RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","bl"}],")"}]," ","bl"," ",RowBox[
+{"(",RowBox[{RowBox[{"-","1"}],"+","br"}],")"}]," ","br"," ",SuperscriptBox["pf",
+"4"]}],"-",RowBox[{"2"," ","p"," ","pf"," ",RowBox[{"(",RowBox[{"bl","+","br","+",RowBox[
+{"2"," ",SuperscriptBox["bl","2"]," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","br"}],")"}]," ","br"," ",SuperscriptBox[
+"pf","2"]}],"-",RowBox[{"2"," ","bl"," ",SuperscriptBox["br","2"]," ",SuperscriptBox[
+"pf","2"]}],"+",RowBox[{"2"," ","bl"," ","br"," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+",SuperscriptBox[
+"pf","2"]}],")"}]}]}],")"}]}],"+",RowBox[{SuperscriptBox["p","2"]," ",RowBox[{"(",RowBox[
+{RowBox[{"-","4"}],"+",RowBox[{"3"," ","br"}],"+",RowBox[{"6"," ",SuperscriptBox[
+"bl","2"]," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","br"}],")"}]," ","br"," ",SuperscriptBox[
+"pf","2"]}],"+",RowBox[{"bl"," ",RowBox[{"(",RowBox[{"3","-",RowBox[{"2"," ","br"}],"+",RowBox[
+{"6"," ","br"," ",SuperscriptBox["pf","2"]}],"-",RowBox[{"6"," ",SuperscriptBox["br",
+"2"]," ",SuperscriptBox["pf","2"]}]}],")"}]}]}],")"}]}]}]],"-",FractionBox[RowBox[
+{"2"," ",RowBox[{"(",RowBox[{RowBox[{RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","bl"}],")"}]," ","bl"," ",RowBox[
+{"(",RowBox[{RowBox[{"-","1"}],"+","br"}],")"}]," ",SuperscriptBox["p","4"]}],"+",RowBox[
+{RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","bl"}],")"}]," ","bl"," ","br"," ",SuperscriptBox[
+"p","4"]}],"-",RowBox[{"4"," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","bl"}],")"}]," ","bl"," ",RowBox[
+{"(",RowBox[{RowBox[{"-","1"}],"+","br"}],")"}]," ",SuperscriptBox["p","3"]," ","pf"}],"-",RowBox[
+{"4"," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","bl"}],")"}]," ","bl"," ","br"," ",SuperscriptBox[
+"p","3"]," ","pf"}],"-",RowBox[{RowBox[{"(",RowBox[{"1","+",RowBox[{"2"," ","bl"}]}],")"}]," ",SuperscriptBox[
+"pf","2"]}],"+",RowBox[{RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","bl"}],")"}]," ","bl"," ",RowBox[
+{"(",RowBox[{RowBox[{"-","1"}],"+","br"}],")"}]," ",SuperscriptBox["pf","4"]}],"+",RowBox[
+{RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","bl"}],")"}]," ","bl"," ","br"," ",SuperscriptBox[
+"pf","4"]}],"-",RowBox[{"2"," ","p"," ","pf"," ",RowBox[{"(",RowBox[{"1","+",RowBox[
+{"2"," ",SuperscriptBox["bl","2"]," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","br"}],")"}]," ",SuperscriptBox[
+"pf","2"]}],"-",RowBox[{"4"," ","bl"," ","br"," ",SuperscriptBox["pf","2"]}],"+",RowBox[
+{"2"," ",SuperscriptBox["bl","2"]," ","br"," ",SuperscriptBox["pf","2"]}],"+",RowBox[
+{"2"," ","bl"," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+",SuperscriptBox["pf","2"]}],")"}]}]}],")"}]}],"+",RowBox[
+{SuperscriptBox["p","2"]," ",RowBox[{"(",RowBox[{"3","+",RowBox[{"6"," ",SuperscriptBox[
+"bl","2"]," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","br"}],")"}]," ",SuperscriptBox[
+"pf","2"]}],"+",RowBox[{"6"," ",SuperscriptBox["bl","2"]," ","br"," ",SuperscriptBox[
+"pf","2"]}],"+",RowBox[{"bl"," ",RowBox[{"(",RowBox[{RowBox[{"-","2"}],"+",RowBox[
+{"6"," ",SuperscriptBox["pf","2"]}],"-",RowBox[{"12"," ","br"," ",SuperscriptBox[
+"pf","2"]}]}],")"}]}]}],")"}]}]}],")"}]," ",RowBox[{"(",RowBox[{RowBox[{"2"," ",RowBox[
+{"(",RowBox[{RowBox[{"-","1"}],"+","bl"}],")"}]," ","bl"," ",RowBox[{"(",RowBox[{RowBox[
+{"-","1"}],"+","br"}],")"}]," ",SuperscriptBox["p","4"]}],"+",RowBox[{"2"," ",RowBox[
+{"(",RowBox[{RowBox[{"-","1"}],"+","bl"}],")"}]," ","bl"," ","br"," ",SuperscriptBox[
+"p","4"]}],"-",RowBox[{"8"," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","bl"}],")"}]," ","bl"," ",RowBox[
+{"(",RowBox[{RowBox[{"-","1"}],"+","br"}],")"}]," ",SuperscriptBox["p","3"]," ","pf"}],"-",RowBox[
+{"8"," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","bl"}],")"}]," ","bl"," ","br"," ",SuperscriptBox[
+"p","3"]," ","pf"}],"-",RowBox[{"2"," ","p"," ",RowBox[{"(",RowBox[{"1","+",RowBox[
+{"3"," ","pf"}],"-",RowBox[{"2"," ","br"," ","pf"}],"+",RowBox[{SuperscriptBox["bl",
+"2"]," ","pf"," ",RowBox[{"(",RowBox[{RowBox[{"4"," ",RowBox[{"(",RowBox[{RowBox[
+{"-","1"}],"+","br"}],")"}]," ",SuperscriptBox["pf","2"]}],"+",RowBox[{"4"," ","br"," ",SuperscriptBox[
+"pf","2"]}]}],")"}]}],"+",RowBox[{"bl"," ",RowBox[{"(",RowBox[{RowBox[{RowBox[{"-","4"}]," ","pf"}],"-",RowBox[
+{"4"," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","br"}],")"}]," ",SuperscriptBox[
+"pf","3"]}],"-",RowBox[{"4"," ","br"," ",SuperscriptBox["pf","3"]}]}],")"}]}]}],")"}]}],"+",RowBox[
+{"pf"," ",RowBox[{"(",RowBox[{"2","-","pf","-",RowBox[{"2"," ","br"," ","pf"}],"+",RowBox[
+{SuperscriptBox["bl","2"]," ","pf"," ",RowBox[{"(",RowBox[{RowBox[{"2"," ",RowBox[
+{"(",RowBox[{RowBox[{"-","1"}],"+","br"}],")"}]," ",SuperscriptBox["pf","2"]}],"+",RowBox[
+{"2"," ","br"," ",SuperscriptBox["pf","2"]}]}],")"}]}],"-",RowBox[{"bl"," ",RowBox[
+{"(",RowBox[{RowBox[{"4"," ","pf"}],"+",RowBox[{"2"," ",RowBox[{"(",RowBox[{RowBox[
+{"-","1"}],"+","br"}],")"}]," ",SuperscriptBox["pf","3"]}],"+",RowBox[{"2"," ","br"," ",SuperscriptBox[
+"pf","3"]}]}],")"}]}]}],")"}]}],"+",RowBox[{SuperscriptBox["p","2"]," ",RowBox[{"(",RowBox[
+{"7","-",RowBox[{"2"," ","br"}],"+",RowBox[{SuperscriptBox["bl","2"]," ",RowBox[{"(",RowBox[
+{RowBox[{"12"," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","br"}],")"}]," ",SuperscriptBox[
+"pf","2"]}],"+",RowBox[{"12"," ","br"," ",SuperscriptBox["pf","2"]}]}],")"}]}],"+",RowBox[
+{"bl"," ",RowBox[{"(",RowBox[{RowBox[{RowBox[{"-","24"}]," ","br"," ",SuperscriptBox[
+"pf","2"]}],"+",RowBox[{"4"," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+",RowBox[
+{"3"," ",SuperscriptBox["pf","2"]}]}],")"}]}]}],")"}]}]}],")"}]}]}],")"}]}],SuperscriptBox[
+RowBox[{"(",RowBox[{"1","+",RowBox[{RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","bl"}],")"}]," ","bl"," ",RowBox[
+{"(",RowBox[{RowBox[{"-","1"}],"+","br"}],")"}]," ","br"," ",SuperscriptBox["p","4"]}],"-",RowBox[
+{"4"," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","bl"}],")"}]," ","bl"," ",RowBox[
+{"(",RowBox[{RowBox[{"-","1"}],"+","br"}],")"}]," ","br"," ",SuperscriptBox["p","3"]," ","pf"}],"-",RowBox[
+{RowBox[{"(",RowBox[{"bl","+","br","+",RowBox[{"2"," ","bl"," ","br"}]}],")"}]," ",SuperscriptBox[
+"pf","2"]}],"+",RowBox[{RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","bl"}],")"}]," ","bl"," ",RowBox[
+{"(",RowBox[{RowBox[{"-","1"}],"+","br"}],")"}]," ","br"," ",SuperscriptBox["pf",
+"4"]}],"-",RowBox[{"2"," ","p"," ","pf"," ",RowBox[{"(",RowBox[{"bl","+","br","+",RowBox[
+{"2"," ",SuperscriptBox["bl","2"]," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","br"}],")"}]," ","br"," ",SuperscriptBox[
+"pf","2"]}],"-",RowBox[{"2"," ","bl"," ",SuperscriptBox["br","2"]," ",SuperscriptBox[
+"pf","2"]}],"+",RowBox[{"2"," ","bl"," ","br"," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+",SuperscriptBox[
+"pf","2"]}],")"}]}]}],")"}]}],"+",RowBox[{SuperscriptBox["p","2"]," ",RowBox[{"(",RowBox[
+{RowBox[{"-","4"}],"+",RowBox[{"3"," ","br"}],"+",RowBox[{"6"," ",SuperscriptBox[
+"bl","2"]," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","br"}],")"}]," ","br"," ",SuperscriptBox[
+"pf","2"]}],"+",RowBox[{"bl"," ",RowBox[{"(",RowBox[{"3","-",RowBox[{"2"," ","br"}],"+",RowBox[
+{"6"," ","br"," ",SuperscriptBox["pf","2"]}],"-",RowBox[{"6"," ",SuperscriptBox["br",
+"2"]," ",SuperscriptBox["pf","2"]}]}],")"}]}]}],")"}]}]}],")"}],"2"]],"+",RowBox[
+{RowBox[{"(",RowBox[{RowBox[{"2"," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","bl"}],")"}]," ","bl"," ",RowBox[
+{"(",RowBox[{RowBox[{"-","1"}],"+","br"}],")"}]," ","br"," ",SuperscriptBox["p","4"]}],"-",RowBox[
+{"8"," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","bl"}],")"}]," ","bl"," ",RowBox[
+{"(",RowBox[{RowBox[{"-","1"}],"+","br"}],")"}]," ","br"," ",SuperscriptBox["p","3"]," ","pf"}],"-",RowBox[
+{"2"," ","p"," ",RowBox[{"(",RowBox[{RowBox[{"-","2"}],"+","br","+",RowBox[{"3"," ","br"," ","pf"}],"-",RowBox[
+{SuperscriptBox["br","2"]," ","pf"}],"+",RowBox[{SuperscriptBox["bl","2"]," ","pf"," ",RowBox[
+{"(",RowBox[{RowBox[{"-","1"}],"+",RowBox[{"4"," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","br"}],")"}]," ","br"," ",SuperscriptBox[
+"pf","2"]}]}],")"}]}],"+",RowBox[{"bl"," ",RowBox[{"(",RowBox[{"1","+",RowBox[{RowBox[
+{"(",RowBox[{"3","-",RowBox[{"4"," ","br"}]}],")"}]," ","pf"}],"-",RowBox[{"4"," ",RowBox[
+{"(",RowBox[{RowBox[{"-","1"}],"+","br"}],")"}]," ","br"," ",SuperscriptBox["pf",
+"3"]}]}],")"}]}]}],")"}]}],"+",RowBox[{"pf"," ",RowBox[{"(",RowBox[{RowBox[{RowBox[
+{"-","br"}]," ",RowBox[{"(",RowBox[{RowBox[{"-","2"}],"+","pf","+",RowBox[{"br"," ","pf"}]}],")"}]}],"+",RowBox[
+{SuperscriptBox["bl","2"]," ","pf"," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+",RowBox[
+{"2"," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","br"}],")"}]," ","br"," ",SuperscriptBox[
+"pf","2"]}]}],")"}]}],"-",RowBox[{"bl"," ",RowBox[{"(",RowBox[{RowBox[{"-","2"}],"+","pf","+",RowBox[
+{"4"," ","br"," ","pf"}],"+",RowBox[{"2"," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","br"}],")"}]," ","br"," ",SuperscriptBox[
+"pf","3"]}]}],")"}]}]}],")"}]}],"+",RowBox[{SuperscriptBox["p","2"]," ",RowBox[{"(",RowBox[
+{RowBox[{"-","8"}],"+",RowBox[{"7"," ","br"}],"-",SuperscriptBox["br","2"],"+",RowBox[
+{SuperscriptBox["bl","2"]," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+",RowBox[{"12"," ",RowBox[
+{"(",RowBox[{RowBox[{"-","1"}],"+","br"}],")"}]," ","br"," ",SuperscriptBox["pf",
+"2"]}]}],")"}]}],"+",RowBox[{"bl"," ",RowBox[{"(",RowBox[{"7","-",RowBox[{"12"," ",SuperscriptBox[
+"br","2"]," ",SuperscriptBox["pf","2"]}],"+",RowBox[{"4"," ","br"," ",RowBox[{"(",RowBox[
+{RowBox[{"-","1"}],"+",RowBox[{"3"," ",SuperscriptBox["pf","2"]}]}],")"}]}]}],")"}]}]}],")"}]}]}],")"}]," ",RowBox[
+{"(",RowBox[{FractionBox[RowBox[{"2"," ",SuperscriptBox[RowBox[{"(",RowBox[{RowBox[
+{RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","bl"}],")"}]," ","bl"," ",RowBox[{"(",RowBox[
+{RowBox[{"-","1"}],"+","br"}],")"}]," ",SuperscriptBox["p","4"]}],"+",RowBox[{RowBox[
+{"(",RowBox[{RowBox[{"-","1"}],"+","bl"}],")"}]," ","bl"," ","br"," ",SuperscriptBox[
+"p","4"]}],"-",RowBox[{"4"," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","bl"}],")"}]," ","bl"," ",RowBox[
+{"(",RowBox[{RowBox[{"-","1"}],"+","br"}],")"}]," ",SuperscriptBox["p","3"]," ","pf"}],"-",RowBox[
+{"4"," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","bl"}],")"}]," ","bl"," ","br"," ",SuperscriptBox[
+"p","3"]," ","pf"}],"-",RowBox[{RowBox[{"(",RowBox[{"1","+",RowBox[{"2"," ","bl"}]}],")"}]," ",SuperscriptBox[
+"pf","2"]}],"+",RowBox[{RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","bl"}],")"}]," ","bl"," ",RowBox[
+{"(",RowBox[{RowBox[{"-","1"}],"+","br"}],")"}]," ",SuperscriptBox["pf","4"]}],"+",RowBox[
+{RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","bl"}],")"}]," ","bl"," ","br"," ",SuperscriptBox[
+"pf","4"]}],"-",RowBox[{"2"," ","p"," ","pf"," ",RowBox[{"(",RowBox[{"1","+",RowBox[
+{"2"," ",SuperscriptBox["bl","2"]," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","br"}],")"}]," ",SuperscriptBox[
+"pf","2"]}],"-",RowBox[{"4"," ","bl"," ","br"," ",SuperscriptBox["pf","2"]}],"+",RowBox[
+{"2"," ",SuperscriptBox["bl","2"]," ","br"," ",SuperscriptBox["pf","2"]}],"+",RowBox[
+{"2"," ","bl"," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+",SuperscriptBox["pf","2"]}],")"}]}]}],")"}]}],"+",RowBox[
+{SuperscriptBox["p","2"]," ",RowBox[{"(",RowBox[{"3","+",RowBox[{"6"," ",SuperscriptBox[
+"bl","2"]," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","br"}],")"}]," ",SuperscriptBox[
+"pf","2"]}],"+",RowBox[{"6"," ",SuperscriptBox["bl","2"]," ","br"," ",SuperscriptBox[
+"pf","2"]}],"+",RowBox[{"bl"," ",RowBox[{"(",RowBox[{RowBox[{"-","2"}],"+",RowBox[
+{"6"," ",SuperscriptBox["pf","2"]}],"-",RowBox[{"12"," ","br"," ",SuperscriptBox[
+"pf","2"]}]}],")"}]}]}],")"}]}]}],")"}],"2"]}],SuperscriptBox[RowBox[{"(",RowBox[
+{"1","+",RowBox[{RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","bl"}],")"}]," ","bl"," ",RowBox[
+{"(",RowBox[{RowBox[{"-","1"}],"+","br"}],")"}]," ","br"," ",SuperscriptBox["p","4"]}],"-",RowBox[
+{"4"," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","bl"}],")"}]," ","bl"," ",RowBox[
+{"(",RowBox[{RowBox[{"-","1"}],"+","br"}],")"}]," ","br"," ",SuperscriptBox["p","3"]," ","pf"}],"-",RowBox[
+{RowBox[{"(",RowBox[{"bl","+","br","+",RowBox[{"2"," ","bl"," ","br"}]}],")"}]," ",SuperscriptBox[
+"pf","2"]}],"+",RowBox[{RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","bl"}],")"}]," ","bl"," ",RowBox[
+{"(",RowBox[{RowBox[{"-","1"}],"+","br"}],")"}]," ","br"," ",SuperscriptBox["pf",
+"4"]}],"-",RowBox[{"2"," ","p"," ","pf"," ",RowBox[{"(",RowBox[{"bl","+","br","+",RowBox[
+{"2"," ",SuperscriptBox["bl","2"]," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","br"}],")"}]," ","br"," ",SuperscriptBox[
+"pf","2"]}],"-",RowBox[{"2"," ","bl"," ",SuperscriptBox["br","2"]," ",SuperscriptBox[
+"pf","2"]}],"+",RowBox[{"2"," ","bl"," ","br"," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+",SuperscriptBox[
+"pf","2"]}],")"}]}]}],")"}]}],"+",RowBox[{SuperscriptBox["p","2"]," ",RowBox[{"(",RowBox[
+{RowBox[{"-","4"}],"+",RowBox[{"3"," ","br"}],"+",RowBox[{"6"," ",SuperscriptBox[
+"bl","2"]," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","br"}],")"}]," ","br"," ",SuperscriptBox[
+"pf","2"]}],"+",RowBox[{"bl"," ",RowBox[{"(",RowBox[{"3","-",RowBox[{"2"," ","br"}],"+",RowBox[
+{"6"," ","br"," ",SuperscriptBox["pf","2"]}],"-",RowBox[{"6"," ",SuperscriptBox["br",
+"2"]," ",SuperscriptBox["pf","2"]}]}],")"}]}]}],")"}]}]}],")"}],"3"]],"-",FractionBox[
+RowBox[{RowBox[{"2"," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","bl"}],")"}]," ","bl"," ",SuperscriptBox[
+"p","4"]}],"-",RowBox[{"8"," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","bl"}],")"}]," ","bl"," ",SuperscriptBox[
+"p","3"]," ","pf"}],"+",RowBox[{"2"," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","bl"}],")"}]," ","bl"," ",SuperscriptBox[
+"pf","4"]}],"-",RowBox[{"2"," ","p"," ","pf"," ",RowBox[{"(",RowBox[{RowBox[{RowBox[
+{"-","4"}]," ","bl"," ",SuperscriptBox["pf","2"]}],"+",RowBox[{"4"," ",SuperscriptBox[
+"bl","2"]," ",SuperscriptBox["pf","2"]}]}],")"}]}],"+",RowBox[{SuperscriptBox["p",
+"2"]," ",RowBox[{"(",RowBox[{RowBox[{RowBox[{"-","12"}]," ","bl"," ",SuperscriptBox[
+"pf","2"]}],"+",RowBox[{"12"," ",SuperscriptBox["bl","2"]," ",SuperscriptBox["pf",
+"2"]}]}],")"}]}]}],SuperscriptBox[RowBox[{"(",RowBox[{"1","+",RowBox[{RowBox[{"(",RowBox[
+{RowBox[{"-","1"}],"+","bl"}],")"}]," ","bl"," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","br"}],")"}]," ","br"," ",SuperscriptBox[
+"p","4"]}],"-",RowBox[{"4"," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","bl"}],")"}]," ","bl"," ",RowBox[
+{"(",RowBox[{RowBox[{"-","1"}],"+","br"}],")"}]," ","br"," ",SuperscriptBox["p","3"]," ","pf"}],"-",RowBox[
+{RowBox[{"(",RowBox[{"bl","+","br","+",RowBox[{"2"," ","bl"," ","br"}]}],")"}]," ",SuperscriptBox[
+"pf","2"]}],"+",RowBox[{RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","bl"}],")"}]," ","bl"," ",RowBox[
+{"(",RowBox[{RowBox[{"-","1"}],"+","br"}],")"}]," ","br"," ",SuperscriptBox["pf",
+"4"]}],"-",RowBox[{"2"," ","p"," ","pf"," ",RowBox[{"(",RowBox[{"bl","+","br","+",RowBox[
+{"2"," ",SuperscriptBox["bl","2"]," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","br"}],")"}]," ","br"," ",SuperscriptBox[
+"pf","2"]}],"-",RowBox[{"2"," ","bl"," ",SuperscriptBox["br","2"]," ",SuperscriptBox[
+"pf","2"]}],"+",RowBox[{"2"," ","bl"," ","br"," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+",SuperscriptBox[
+"pf","2"]}],")"}]}]}],")"}]}],"+",RowBox[{SuperscriptBox["p","2"]," ",RowBox[{"(",RowBox[
+{RowBox[{"-","4"}],"+",RowBox[{"3"," ","br"}],"+",RowBox[{"6"," ",SuperscriptBox[
+"bl","2"]," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","br"}],")"}]," ","br"," ",SuperscriptBox[
+"pf","2"]}],"+",RowBox[{"bl"," ",RowBox[{"(",RowBox[{"3","-",RowBox[{"2"," ","br"}],"+",RowBox[
+{"6"," ","br"," ",SuperscriptBox["pf","2"]}],"-",RowBox[{"6"," ",SuperscriptBox["br",
+"2"]," ",SuperscriptBox["pf","2"]}]}],")"}]}]}],")"}]}]}],")"}],"2"]]}],")"}]}]}],
+StandardForm],"Output",CellLabel -> "Out[6]= ",ExpressionUUID -> "5063580d-3eb1-4688-98bb-bc92ad4b8130"],Cell[
+BoxData[
+RowBox[{"-",FractionBox[RowBox[{"2"," ",SuperscriptBox[RowBox[{"(",RowBox[{"1","-",RowBox[
+{"2"," ","p"}]}],")"}],"2"]," ",SuperscriptBox[RowBox[{"(",RowBox[{"p","-",SuperscriptBox[
+"p","2"],"-","pf","+",SuperscriptBox["pf","2"]}],")"}],"2"]}],SuperscriptBox[RowBox[
+{"(",RowBox[{"1","+",RowBox[{RowBox[{"(",RowBox[{RowBox[{"-","4"}],"+",RowBox[{"3"," ","br"}]}],")"}]," ",SuperscriptBox[
+"p","2"]}],"-",RowBox[{"2"," ","br"," ","p"," ","pf"}],"-",RowBox[{"br"," ",SuperscriptBox[
+"pf","2"]}]}],")"}],"3"]]}],StandardForm],"Output",CellLabel -> "Out[7]= ",ExpressionUUID -> "4dce6262-9612-4938-a5d0-83ae713a9d3e"],Cell[
+BoxData[
+RowBox[{RowBox[{"0","<","br","<","1"}],"&&",RowBox[{"0","\[LessEqual]","p","<","pf","\[LessEqual]",FractionBox[
+"1","2"]}]}],StandardForm],"Output",CellLabel -> "Out[8]= ",ExpressionUUID -> "286f4c9d-8626-45db-a872-8ca11fe5ce52"],Cell[
+BoxData[
+"False",StandardForm],"Output",CellLabel -> "Out[9]= ",ExpressionUUID -> "e168831b-a0c9-4ee9-8faa-654217a69b7f"]},
+Open],ExpressionUUID -> "9a8620c3-f9c8-4b05-829c-283482646c82"]},Open],ExpressionUUID -> "ca1e04d0-5dcc-4e2f-a4d1-c659787bc521"]},
+StyleDefinitions -> "Default.nb",FrontEndVersion -> "14. for Wolfram Cloud 1.68 (February 7, 2024)"]
